@@ -24,21 +24,16 @@
       }
     },
     created () {
-      // fetch the data when the view is created and the data is
-      // already being observed
-      this.fetchData()
-    },
-    mounted() {
+      // fetch the data when the view is created and the data is already being observed
       this.fetchData()
     },
     watch: {
-      // call again the method if the route changes
+      // call the method if the route changes
       '$route': 'fetchData'
     },
     methods: {
       fetchData () {
         this.loading = true
-        //console.log('fetchData function fired')
 
         fetch('https://jsonplaceholder.typicode.com/posts')
                 .then(response => {
