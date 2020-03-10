@@ -1,4 +1,5 @@
-# hello-world
+# Vue SPA Skeleton
+Includes vue-router and basic routing, generated with vue-cli.
 
 ## Project setup
 ```
