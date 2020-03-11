@@ -4,7 +4,9 @@ import Foo from './components/FooComponent.vue'
 import Home from './components/HomeComponent.vue'
 import Bar from './components/BarComponent.vue'
 import VueRouter from 'vue-router'
-import ApiComponent from "./components/ApiComponent";
+import ApiComponent from './components/ApiComponent'
+import PostComponent from './components/PostComponent'
+
 
 // vue configs
 Vue.config.productionTip = false
@@ -36,6 +38,13 @@ const routes = [
   {
     path: '/api',
     component: ApiComponent,
+    meta : {
+      title: 'API Page'
+    }
+  },
+  {
+    path: '/post',
+    component: PostComponent,
     meta : {
       title: 'API Page'
     }
